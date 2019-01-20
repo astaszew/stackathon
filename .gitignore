@@ -1,0 +1,15 @@
+node_modules/**/*
+.expo/*
+npm-debug.*
+*.jks
+*.p12
+*.key
+*.mobileprovision
+node_modules
+public/bundle.js
+public/bundle.js.map
+secrets.js
+.DS_Store
+npm-debug.log
+yarn-error.log
+
