@@ -1,5 +1,6 @@
 import React from 'react';
 import { Icon } from 'expo';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 import Colors from '../constants/Colors';
 

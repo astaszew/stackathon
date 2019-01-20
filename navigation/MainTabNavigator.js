@@ -6,6 +6,8 @@ import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
+import SearchUsername from '../components/SearchUsername';
+
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen,
@@ -30,7 +32,7 @@ const LinksStack = createStackNavigator({
 });
 
 LinksStack.navigationOptions = {
-  tabBarLabel: 'Links',
+  tabBarLabel: 'TwitchData',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
@@ -41,10 +43,12 @@ LinksStack.navigationOptions = {
 
 const SettingsStack = createStackNavigator({
   Settings: SettingsScreen,
+  Search: SearchUsername
+  
 });
 
 SettingsStack.navigationOptions = {
-  tabBarLabel: 'Settings',
+  tabBarLabel: 'Search Username',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
