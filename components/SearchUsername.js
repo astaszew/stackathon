@@ -45,9 +45,6 @@ const SearchUsername= (props) => {
                     
                 })
             }
-           
-
-
             <Text style={styles.subtitle}>much wow</Text>
           </View>
         </ScrollView>
