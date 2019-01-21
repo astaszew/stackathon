@@ -1,6 +1,9 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import Iframe from 'react-iframe'
+import { View, Text, StyleSheet, Image, WebView, ScrollView } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import VideoPlay from '../components/VideoPlay'
+import ChatView from '../components/ChatView'
 
 
 
@@ -10,7 +13,7 @@ const SearchUsername= (props) => {
 
   return (
     (Array.isArray(information))? (
-        <View style={styles.infoContainer}>
+        <ScrollView style={styles.infoContainer}>
           <View style={styles.headerContainer}>
             <MaterialCommunityIcons size={70} name="xbox-controller"  />
             
@@ -35,14 +38,19 @@ const SearchUsername= (props) => {
                         Current Viewer Count: {name.viewer_count}
                     
                         </Text>
+                        <VideoPlay/>
+                        <ChatView/>
                         </View>
                     )
                     
                 })
             }
+           
+
+
             <Text style={styles.subtitle}>much wow</Text>
           </View>
-        </View>
+        </ScrollView>
       )
     
          :
