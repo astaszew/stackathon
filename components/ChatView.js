@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
 import { WebView, View, StyleSheet } from 'react-native';
 
-class ChatView extends Component {
-  render() {
+const ChatView = (props) => {
+      console.log(props.name, "props")
+      let twitchUri = `https://www.twitch.tv/embed/${props.name}/chat`
     return (
         <View style = {styles.container}>
       <WebView
         javaScriptEnabled = {true}
-        source={{uri: "https://www.twitch.tv/embed/tfue/chat"}}
+        source={{uri: twitchUri}}
         style={{marginTop: 1}} scalesPageToFit={false} 
       />
       </View>
     );
-  }
+  
 }
 
 export default ChatView

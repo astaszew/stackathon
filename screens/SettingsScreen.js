@@ -27,7 +27,7 @@ export default class SettingsScreen extends React.Component {
   };
 
    onPress = () =>{
-    console.log(this.state.userName)
+    
     this.getData();
     
   }
@@ -37,7 +37,7 @@ export default class SettingsScreen extends React.Component {
     this.setState({
       twitchData:data
     })
-    console.log(data)
+    
   }
 
   onChangeText = userName => this.setState({userName})

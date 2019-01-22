@@ -29,6 +29,7 @@ const SearchUsername= (props) => {
                         <View style={styles.infoContainer} key = {name.user_id}>
                         <Text style = {styles.title}>
                        Streamer: {name.user_name}
+                       
                         </Text>
                         <Text style = {styles.subtitle}>
                         Current Stream Title: {name.title}
@@ -38,14 +39,14 @@ const SearchUsername= (props) => {
                         Current Viewer Count: {name.viewer_count}
                     
                         </Text>
-                        <VideoPlay/>
-                        <ChatView/>
+                        <VideoPlay name = {name.user_name}/>
+                        <ChatView name = {name.user_name}/>
                         </View>
                     )
                     
                 })
             }
-            <Text style={styles.subtitle}>much wow</Text>
+            <Text style={styles.subtitle}></Text>
           </View>
         </ScrollView>
       )
