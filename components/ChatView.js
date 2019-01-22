@@ -7,13 +7,14 @@ class ChatView extends Component {
         <View style = {styles.container}>
       <WebView
         javaScriptEnabled = {true}
-        source={{uri: "https://www.twitch.tv/embed/lirik/chat"}}
+        source={{uri: "https://www.twitch.tv/embed/tfue/chat"}}
         style={{marginTop: 1}} scalesPageToFit={false} 
       />
       </View>
     );
   }
 }
+
 export default ChatView
 
 const styles = StyleSheet.create({

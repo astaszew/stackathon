@@ -6,12 +6,12 @@ const HomeInsert = () => {
   return (
     <View style={styles.infoContainer}>
       <View style={styles.headerContainer}>
-        <MaterialCommunityIcons size={70} name="emoticon-poop"  />
-        <Text style={styles.infoText}>Twitch Minimal</Text>
+        <MaterialCommunityIcons size={70} name="google-controller"  />
+        <Text style={styles.infoText}>Twitch Channel Discovery</Text>
       </View>
       <View style={styles.bodyContainer}>
-        <Text style={styles.title}>Such minimal</Text>
-        <Text style={styles.subtitle}>wow</Text>
+        <Text style={styles.title}>Alec Staszewski</Text>
+        <Text style={styles.subtitle}></Text>
       </View>
     </View>
   );
